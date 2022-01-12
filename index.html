@@ -9,20 +9,24 @@
 </head>
 <body>
     <div class="header">
-        <h1><img class="headimg" src="/resources/parrot.png" alt="parrot"><span class="headtext">Pirate speaks</span></h1>
+        <video class="backvdo" autoplay loop muted>
+            <source type="video/mp4" src="resources/Fire.mp4">
+        </video>
+        <div class="head">Dothraki</div>
     </div>
-   <div >
-   <textarea class="inputbox"id="txt-input" rows="5" placeholder="ENTER TEXT HERE" ></textarea>
-   </div>
-    <button class="submit-btn" id="btn-submit">submit</button>
-
-    <p class="text">Your output will display here</p>
-
-<div class="output-box" id="txt-output"></div>
-
-<footer>
-            
-</footer>
+    <!-- <div>
+    <span class="itext text">Enter Your Text Here</span><span class="otext text">Your Output Will Appear Here</span>
+    </div> -->
+          <div class="inout">
+                <textarea rows ="10" cols = "40" class="inputbox" id="txt-input" placeholder="Enter Your Text" ></textarea>
+                <button class="submitbtn" id="btn-submit">convert</button>
+                <div class="outputbox" ><span id="txt-output" class="outputtext">Converted Text</span></div>
+            </div>
+            <footer>
+                <ul>
+                    <li><a href=""></a></li>
+                </ul>
+            </footer>
     <script src="app.js"></script>
 </body>
 </html>
