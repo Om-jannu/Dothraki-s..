@@ -103,7 +103,7 @@ body{
     transform: translateX(-12rem);
 }
 .activemenu{
-    right:5rem;
+    right: 5.5rem;
 }
 .activemenuicon{
     transform: rotate(180deg);
