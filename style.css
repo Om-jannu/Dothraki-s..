@@ -35,6 +35,7 @@ body{
     font-weight: bolder;
 }
 .inout{
+    max-width: 100%;
     position: relative;
     display: flex;
     text-align: center;
@@ -51,6 +52,7 @@ body{
     border-radius: 0.3rem;
     min-width: 20%;
     color: black;
+    max-width: 20%;
 }
 .submitbtn{
     padding: 5rem auto;
@@ -61,6 +63,7 @@ body{
     background-color: darkgray;
     border: 1px solid;
     width: 25%;
+    min-width: 25%;
     border-radius: 0.3rem;
 }
 .outputtext{
