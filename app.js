@@ -1,8 +1,12 @@
 var inputTxt = document.querySelector("#txt-input");
 var submitBtn = document.querySelector("#btn-submit");
 var outputTxt = document.querySelector("#txt-output");
+var menu = document.querySelector("#menu");
+var connect = document.querySelector("#connect");
+var menuicon = document.querySelector("#menuicon");
 
 var serverURL = "https://api.funtranslations.com/translate/dothraki.json";
+
 
 function getfetchurl(input){
     return serverURL+"?text="+input;
@@ -19,9 +23,15 @@ function submitactionhandler(){
         json => {
             var output = json.contents.translated;
             outputTxt.innerText = output;
-            console.log("submit button was clicked");
+            console.log("submit btn was clicked");
         })
     .catch(errorhandler)
-    inputTxt.value = " ";
+    inputTxt.value = "";
 };
+function menuactionhandler(){
+    connect.classList.toggle("activeconnect");
+    menu.classList.toggle("activemenu");
+    menuicon.classList.toggle("activemenuicon");
+}
 submitBtn.addEventListener("click",submitactionhandler);
+menu.addEventListener("click",menuactionhandler);

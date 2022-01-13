@@ -5,6 +5,7 @@ body{
     margin: 0%;
     padding: 0%;
     font-family: 'Titillium Web', sans-serif;
+    transition: all 0.8s;
 }
 .container{
     width: 100%;
@@ -43,6 +44,7 @@ body{
     padding: 10rem 0;
 }
 .inputbox{
+    font-family: 'Titillium Web', sans-serif;
     background-color:darkgray;
     outline: none;
     border: 1px solid;
@@ -57,10 +59,12 @@ body{
 .submitbtn{
     padding: 5rem auto;
     margin: auto 2rem;
-
+    cursor: pointer;
 }
 .outputbox{
+    display: flex;
     background-color: darkgray;
+    color: black;
     border: 1px solid;
     width: 25%;
     min-width: 25%;
@@ -70,4 +74,67 @@ body{
     color: black;
     display: block;
     padding: 1rem;
+}
+.voice{
+    position: fixed;
+    cursor: pointer;
+    background-color: aliceblue;
+    padding: 0.5rem 0.8rem;
+    border-radius: 50%;
+    bottom: 2rem;
+    margin: auto;
+}
+.menu{
+    text-align: center;
+    position: fixed;
+    top: 18rem;
+    right: 2rem;
+    padding: 0.8rem;
+    border-bottom-left-radius: 100%;
+    border-top-left-radius: 100%;
+    background-color: rgb(200, 203, 206);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.menu:hover{
+    transform: translateX(-0.3rem);
+}
+.activeconnect{
+    transform: translateX(-12rem);
+}
+.activemenu{
+    right:5rem;
+}
+.activemenuicon{
+    transform: rotate(180deg);
+}
+.connect{
+    width: 5%;
+    height: 40%;
+    background-color:gainsboro;
+    border-radius: 0.5rem;
+    color: aqua;
+    position:fixed;
+    top: 12rem;
+    right: -10rem;
+    transition: 0.5s;
+}
+.connect::after{
+    right: 1rem;
+}
+.listhold{
+    padding: 0%;
+}
+.connectlist{
+    text-align: center;
+    list-style: none;
+    margin: 2rem 0;
+}
+.fab{
+    font-size:larger;
+    color:darkslategray;
+    transition: 0.5s;
+}
+.fab:hover{
+    font-size: x-large;
 }

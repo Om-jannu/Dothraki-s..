@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Translator</title>
+    <title>Dothraki's</title>
+    <script src="https://kit.fontawesome.com/a43a402015.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="resources/translate_favicon.png">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,13 +16,28 @@
                 <source type="video/mp4" src="resources/Fireplace.mp4">
             </video>
         <div class="front">
-            <h1>Dothraki</h1>
+            <h1>Dothraki's</h1>
             <div class="inout">
-                <textarea rows ="10" cols = "35" class="inputbox" id="txt-input" placeholder="Enter Your Text" ></textarea>
+                <textarea rows ="10" cols = "50" class="inputbox" id="txt-input" placeholder="Enter Your Text"></textarea>
                 <button class="submitbtn" id="btn-submit">convert</button>
-                <div class="outputbox" ><span id="txt-output" class="outputtext">Converted Text</span></div>
+                
+                <div class="outputbox" >
+                    <span id="txt-output" class="outputtext">Converted Text will appear here</span>
+                    <div class="voice"><i class="fas fa-volume-up"></i></div>
+                </div>
+                
             </div>
+            
         </div>
+    </div>
+    <div class="menu" id="menu"><i id="menuicon" class="fa fa-solid fa-caret-left"></i></div>
+    <div class="connect" id="connect">
+        <ul class="listhold">
+            <li class="connectlist"><a href=""><i class="fab fa-facebook"></i></a></li>
+            <li class="connectlist"><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li class="connectlist"><a href=""><i class="fab fa-twitter"></i></a></li>
+            <li class="connectlist"><a href=""><i class="fab fa-github"></i></a></li>
+        </ul>
     </div>
     <!-- <div>
     <span class="itext text">Enter Your Text Here</span><span class="otext text">Your Output Will Appear Here</span>
