@@ -1,116 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Source+Sans+Pro:wght@300&family=Vujahday+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Source+Sans+Pro:wght@300&family=Vujahday+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Love+Light&family=Source+Sans+Pro:wght@300&family=Vujahday+Script&display=swap');
-/* body{
-    text-align: center;
-} */
-*{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-/* .output-box{
-float: right;
-    text-align: center;
-    color: bisque;
-    font-size: large;
-    box-shadow: 0.5rem 0.5rem 1rem crimson;
-  padding:8rem 8rem;
-  margin: 1rem auto;
-  border-radius: 0.5rem;
-}
-.header{
-    margin: 0rem 2rem;
-    box-shadow:-0.5rem 0.5rem 0.5rem crimson;
-}
-.headimg{
-    max-width: 10%;
-    min-width: 10%;
-}
-.headtext{
-    color: crimson;
-    font-family: 'Love Light', cursive;
-    font-size: 60px;
-    max-width: 20%;
-    max-height: 20%;
-}.text{
-    font-family: 'Vujahday Script', cursive;
-    font-size: x-large;
-    margin: 2rem;
-}
-.itext{
-    float: left;
-}
-.otext{
-    float: right;
-}
-.inputbox{
-    font-size: large;
-    resize: none;
-    box-shadow: -0.5rem 0.5rem 1rem crimson;
-    margin:1rem auto;
-    border-radius: 0.5rem;
-}
-.inputbox:focus{
-    transition: 100ms;
-    border: 3px solid #555;
-}
-.inputfield::placeholder{
-    padding: 1rem 1rem;
-    font-family: 'Indie Flower', cursive;
 
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Indie+Flower&family=Love+Light&family=Moon+Dance&family=Source+Sans+Pro:wght@300&family=Titillium+Web&family=Vujahday+Script&display=swap');
+
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Titillium Web', sans-serif;
 }
-.inout{
-    display: flex;
-}
-.submitbtn{
-height: 100%;
-} */
-/* body{
-    margin: 0;
-    padding: 0;
-} */
-.header{
-    padding: 2rem;
-    margin: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    top: 1rem;
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
 }
 .backvdo{
     width: 100%;
-    height: 200px;
+    height: 100%;
+    min-height: 50%;
+    margin: 0%;
 }
-.head{
-    background-color: rgba(0, 0, 0, 0.9);
+.front{
     text-align: center;
-    color: aliceblue;
-    position:fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
 }
-.headimg{
-    width: 9%;
+.front h1{
+    color: whitesmoke;
+    position: relative;
+    top: 4rem;
+    font-family: 'Bungee', cursive;
+    font-size: xx-large;
+    font-weight: bolder;
 }
 .inout{
+    position: relative;
     display: flex;
+    text-align: center;
     justify-content: center;
-    margin: 1rem auto;
+    padding: 10rem 0;
 }
 .inputbox{
+    background-color:darkgray;
+    outline: none;
     border: 1px solid;
     padding: 1rem;
     resize: none;
     font-size: medium;
     border-radius: 0.3rem;
     min-width: 20%;
+    color: black;
 }
 .submitbtn{
-    padding: 1rem auto;
+    padding: 5rem auto;
     margin: auto 2rem;
+
 }
 .outputbox{
+    background-color: darkgray;
     border: 1px solid;
     width: 25%;
     border-radius: 0.3rem;
-    background-color: white;
 }
 .outputtext{
+    color: black;
     display: block;
     padding: 1rem;
 }

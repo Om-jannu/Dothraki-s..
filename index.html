@@ -8,25 +8,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <video class="backvdo" autoplay loop muted>
-            <source type="video/mp4" src="resources/Fire.mp4">
-        </video>
-        <div class="head">Dothraki</div>
+    <div class="container">
+            <video class="backvdo" autoplay loop muted>
+                <source type="video/mp4" src="resources/Fireplace.mp4">
+            </video>
+        <div class="front">
+            <h1>Dothraki</h1>
+            <div class="inout">
+                <textarea rows ="10" cols = "35" class="inputbox" id="txt-input" placeholder="Enter Your Text" ></textarea>
+                <button class="submitbtn" id="btn-submit">convert</button>
+                <div class="outputbox" ><span id="txt-output" class="outputtext">Converted Text</span></div>
+            </div>
+        </div>
     </div>
     <!-- <div>
     <span class="itext text">Enter Your Text Here</span><span class="otext text">Your Output Will Appear Here</span>
     </div> -->
-          <div class="inout">
-                <textarea rows ="10" cols = "40" class="inputbox" id="txt-input" placeholder="Enter Your Text" ></textarea>
-                <button class="submitbtn" id="btn-submit">convert</button>
-                <div class="outputbox" ><span id="txt-output" class="outputtext">Converted Text</span></div>
-            </div>
-            <footer>
+          
+            <!-- <footer>
                 <ul>
                     <li><a href=""></a></li>
                 </ul>
-            </footer>
+            </footer> -->
     <script src="app.js"></script>
 </body>
 </html>
