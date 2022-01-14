@@ -4,6 +4,8 @@ var outputTxt = document.querySelector("#txt-output");
 var menu = document.querySelector("#menu");
 var connect = document.querySelector("#connect");
 var menuicon = document.querySelector("#menuicon");
+var voice = document.querySelector("#voice");
+var count=0;
 
 var serverURL = "https://api.funtranslations.com/translate/dothraki.json";
 
@@ -33,5 +35,10 @@ function menuactionhandler(){
     menu.classList.toggle("activemenu");
     menuicon.classList.toggle("activemenuicon");
 }
+function voicehandler(){
+    let utter = new SpeechSynthesisUtterance(outputTxt.innerText);
+    speechSynthesis.speak(utter);
+}
 submitBtn.addEventListener("click",submitactionhandler);
 menu.addEventListener("click",menuactionhandler);
+voice.addEventListener("click",voicehandler);

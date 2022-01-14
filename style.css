@@ -57,9 +57,17 @@ body{
     max-width: 20%;
 }
 .submitbtn{
-    padding: 5rem auto;
+    width: 2rem;
+    height: 2rem;
     margin: auto 2rem;
     cursor: pointer;
+    border-radius: 0.5rem;
+    background-color: darkgray;
+    outline: none;
+    transition: 1s;
+}
+.submitbtn:hover{
+    color: orangered;
 }
 .outputbox{
     display: flex;
@@ -71,18 +79,25 @@ body{
     border-radius: 0.3rem;
 }
 .outputtext{
+    width: 100%;
     color: black;
     display: block;
     padding: 1rem;
 }
 .voice{
-    position: fixed;
+    position:relative;
     cursor: pointer;
-    background-color: aliceblue;
+    background-color: darkgray;
     padding: 0.5rem 0.8rem;
     border-radius: 50%;
-    bottom: 2rem;
-    margin: auto;
+    box-shadow: -1px 1px 5px black;
+    transition: 1s;
+    margin:auto;
+    margin-top: 14rem;
+    
+}
+.voice:hover{
+    color: orangered;
 }
 .menu{
     text-align: center;
@@ -98,6 +113,7 @@ body{
 }
 .menu:hover{
     transform: translateX(-0.3rem);
+    color: orangered;
 }
 .activeconnect{
     transform: translateX(-12rem);
@@ -110,7 +126,7 @@ body{
 }
 .connect{
     width: 5%;
-    height: 40%;
+    height: 37%;
     background-color:gainsboro;
     border-radius: 0.5rem;
     color: aqua;
@@ -128,7 +144,7 @@ body{
 .connectlist{
     text-align: center;
     list-style: none;
-    margin: 2rem 0;
+    margin: 2.5rem 0;
 }
 .fab{
     font-size:larger;
