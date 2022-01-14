@@ -37,6 +37,7 @@ function menuactionhandler(){
 }
 function voicehandler(){
     let utter = new SpeechSynthesisUtterance(outputTxt.innerText);
+    utter.rate=1;
     speechSynthesis.speak(utter);
 }
 submitBtn.addEventListener("click",submitactionhandler);
