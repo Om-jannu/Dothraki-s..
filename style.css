@@ -152,4 +152,5 @@ body{
 }
 .fab:hover{
     font-size: x-large;
+    color: orangered;
 }
